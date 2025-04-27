@@ -1,0 +1,33 @@
+GENERAL REFLECTION & CONTEXT:
+----------------------------------------
+For this lab, I tried to not get too carried away as I have in recent assignments, despite my experiences.
+For context, I've spent around 4 years working part-time for Hy-Vee in roles ranging from cashier, stocking/reshelving, customer clerk, and online personal shopper.
+This experience/context may help explain why I make certain changes to assumptions and/or modify the final submission for this lab.
+
+----------------------------------------
+ASSUMPTION ADJUSTMENTS & RATIONALE:
+----------------------------------------
+I adjusted or reflected on the following assumptions:
+
+Random Items ----- When it comes to the number of items picked by shoppers, I started out and keeping the item range 5-100, however, I truly think cumulative items is closer to 25 or so.
+------------------ After looking into the Python documentation and specific to random, I figured one way to acomplish this is via random.triangular(5,100,25).
+------------------ This and further reference can be found: https://docs.python.org/3/library/random.html#random.triangular
+
+# of Checkers ---- Given all other values remain true, three checkers seemed to be the turning point of customers still waiting to be checked out.
+------------------ Similarly, the amount of idle time increased, however, this could shift based on other factors not collected (experience, change in efficiency, etc).
+------------------ While the amount of money taken in wasn't calculated, I wonder what the potential loss is for idle time spent if checkers are paid hourly.
+------------------ Imagine if they were paid through a combination of number of transactions that were efficient, total money earned by transaction, and other factors.
+
+Arrival Rate ----- The rate at which a new shopper arrives may have significant impacts on wait and idle times, not to mention customer satisfaction (not measured, but assumed).
+------------------ I am curious to understand how this ebbs/flows when a sale and/or external factors are influencing customer engagement.
+
+Total Store Time - While not written into this lab, there's almost all the fixins to calculate the total time spent in the store.
+------------------ All that's left here is to save/collect the calculated shopping time (shoppingTime), calculate the startCheckout time, then update the processResults() to include these changes.
+
+----------------------------------------
+Conclusion:
+----------------------------------------
+SimPy appears to be an effective and quick tool to help model real-world processes without needing the resources to do so.
+More factors/information like grocery store location, competitors in market, promotions, and supply chain could inform/impact the behavior surrounding shopping.
+With more time and coding, one could really write out a program that could help businesses like grocery stores know how well they are performing.
+I look forward to implementing SimPy into the homework assignment, especially when the topic is automobile traffic in Omaha.
